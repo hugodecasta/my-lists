@@ -1,0 +1,68 @@
+{
+    "name": "api",
+    "vue_src_directory": "./src",
+    "is_fake": false,
+    "apis": {
+        "accounts": {
+            "host": "api/account",
+            "apis": {
+                "lists": {
+                    "host": "lists",
+                    "endpoints": {
+                        "get": {
+                            "url": "",
+                            "method": "GET",
+                            "credentials": {
+                                "header_type": "custom",
+                                "token_type": "local",
+                                "options": {
+                                    "header": "Authorization",
+                                    "cred_key": "list_token"
+                                }
+                            }
+                        },
+                        "set": {
+                            "url": "",
+                            "method": "PUT",
+                            "data_needed": true,
+                            "credentials": {
+                                "header_type": "custom",
+                                "token_type": "local",
+                                "options": {
+                                    "header": "Authorization",
+                                    "cred_key": "list_token"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "endpoints": {
+                "exists": {
+                    "url": "exists",
+                    "method": "GET",
+                    "credentials": {
+                        "header_type": "custom",
+                        "token_type": "argument",
+                        "options": {
+                            "header": "Authorization",
+                            "argument": "token"
+                        }
+                    }
+                },
+                "create": {
+                    "url": "create",
+                    "method": "POST",
+                    "credentials": {
+                        "header_type": "custom",
+                        "token_type": "argument",
+                        "options": {
+                            "header": "Authorization",
+                            "argument": "token"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
