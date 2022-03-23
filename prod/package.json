@@ -1,0 +1,17 @@
+{
+  "name": "my-list-prod",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hugo Castaneda",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "express": "^4.17.3",
+    "short-hash": "^1.0.0",
+    "uuid": "^8.3.2"
+  }
+}
